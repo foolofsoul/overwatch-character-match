@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Big Noodle Titling;
+  src: url("../fonts/big_noodle_titling.ttf");
+}
+
+@font-face {
+  font-family: Big Noodle Titling Oblique;
+  src: url("../fonts/big_noodle_titling_oblique.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+  text-align: center;
+  font-family: "Big Noodle Titling", Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  color: #fff;
+  background: linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.75)
+    ), url(../img/bg/industries.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+/****************   CSS COMMENT   ****************/
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.header {
+  display: inline-block;
+}
+
+.heading {
+  margin-bottom: 5px;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.description {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-family: Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  color: #ccc;
+}
+
+#char-img {
+  display: none;
+}
+
+#char-img.active {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: linear-gradient(#00C3FF, #277BA6);
+  box-shadow: inset -4px 4px 15px -1px rgba(0,0,0,.5);
+}
+
+#you-are {
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: none;
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+#you-are.active {
+  display: block;
+}
+
+#char-name {
+  color: #ffdf3a;
+}
+
+.message-select {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  border: 0;
+  border-bottom: 3px dotted #00c3ff;
+  background: rgba(0,0,0,0);
+  color: #00c3ff;
+  font-family: "Big Noodle Titling", Montserrat, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  min-width: 100%;
+  line-height: 1.25;
+}
+
+#dropdown1,
+#dropdown2,
+#dropdown3 {
+  display: inline-block;
+  color: #00c3ff;
+  position: relative;
+  text-align: center;
+}
+
+#dropdown1 {
+  width: 150px;
+}
+
+#dropdown2 {
+  width: 190px;
+}
+
+#dropdown3 {
+  width: 90px;
+}
+
+.item {
+  display: inline-block;
+  text-align: center;
+}
+
+.active .item {
+  position: relative;
+  display: inline-block;
+  z-index: 5;
+}
+
+button {
+  margin: 25px auto 0;
+  padding: 15px 35px 15px 25px;
+  display: block;
+  border: 0;
+  font-family: "Big Noodle Titling", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  color: #d0d0dc;
+  background-color: rgba(40,53,79,.9);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: rgba(40,53,79,.9);
+  background-color: #fff;
+}

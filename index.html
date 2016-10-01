@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Joshua Larks">
+  <meta name="description" content="Which Overwatch Character are you?">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Overwatch Character are You?</title>
+  <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <!--****************   COMMENT   ****************-->
+  <div class="wrapper">
+
+    <div class="header">
+      <h1 class="heading">Which Overwatch Character Are You?</h1>
+      <p class="description">Choose the options below that match your personality<br>to see which Overwatch charcter you are!</p>
+    </div>
+    
+    <img id="char-img"> 
+    <h3 id="you-are">You are <span id="char-name"></span>!</h3>
+    
+    <div class="message-select">
+      <p>You strive for 
+        <select id="dropdown1" class="first-select">
+          <option value="honor" class="item">honor</option>
+          <option value="strength" class="item">strength</option>
+          <option value="money" class="item">money</option>
+        </select>, <br> and use 
+        <select id="dropdown2" class="second-select">
+          <option value="brute-force" class="item">brute-force</option>
+          <option value="cunning" class="item">cunning</option>
+          <option value="peace" class="item">peace</option>
+        </select> to obtain your goal, <br> while coming out 
+        <select id="dropdown3" class="third-select">
+          <option value="clean" class="item">clean</option>
+          <option value="dirty" class="item">dirty</option>
+        </select> in the end.
+        <button type="button" id="btn">SUMBIT</button>
+      </p>
+    </div>
+    
+  </div>
+  <!-- JQUERY -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
